@@ -1,4 +1,4 @@
-A comprehensive banking application built with Spring Boot, featuring user authentication, account management, transactions, loans, and automated notifications.
+A comprehensive banking application built with Spring Boot, featuring 40 comprehensive unit tests, jwt user authentication, Event driven architecture, account management, transactions, loans, and automated notifications.
 
 # Features
 
@@ -50,7 +50,7 @@ A comprehensive banking application built with Spring Boot, featuring user authe
 
 ## Notifications & Reports
 
-- Email notifications for:
+- Event driven email notifications for:
 
 - Account creation
 - Transactions (deposits/withdrawals)
@@ -101,7 +101,7 @@ On-demand account reports by date range
 ## Scheduling:
 
 - Spring @Scheduled (cron jobs for automated tasks)
-- @Async (asynchronous email processing)
+- @Async (asynchronous and event driven email processing)
 
 # Prerequisites
 
