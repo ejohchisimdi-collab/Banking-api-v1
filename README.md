@@ -113,7 +113,7 @@ On-demand account reports by date range
 ## Getting Started
 ### 1. Clone the Repository
 - git clone https://github.com/ejohchisimdi-collab/Banking-api-v1.git
-- cd Baking-api-v1
+- cd Banking-api-v1
 ### 2. Configure Environment Variables
 - Create a .env file in the project root:
 - pring.datasource.url=jdbc:mysql:// localhost:3306/banking_db
