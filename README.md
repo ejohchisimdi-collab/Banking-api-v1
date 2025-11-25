@@ -2,6 +2,9 @@ A comprehensive banking application built with Spring Boot, featuring user authe
 
 # Features
 
+## All Api End points
+[Api endpoints](api-docs.html)
+
 ## User Management
 
 - User registration with role-based access (Customer, Employee, Admin)
@@ -210,4 +213,5 @@ POST /users/login
 # License
 - This project is open source and available under the MIT License.
 ## Author
+
 Chisimdi Ejoh
