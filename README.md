@@ -3,7 +3,7 @@ A comprehensive banking application built with Spring Boot, featuring user authe
 # Features
 
 ## All Api End points
-[Api endpoints](api-docs.html)
+[Api endpoints](https://ejohchisimdi-collab.github.io/Banking-api-v1/)
 
 ## User Management
 
@@ -215,3 +215,4 @@ POST /users/login
 ## Author
 
 Chisimdi Ejoh
+
