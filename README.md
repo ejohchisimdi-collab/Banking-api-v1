@@ -109,8 +109,30 @@ On-demand account reports by date range
 - Maven 3.6+
 - MySQL 8.0+
 - SMTP server access (for email notifications)
+- Docker desktop for quick start
 
 ## Getting Started
+
+#  Getting Started
+
+### Quick Start (Recommended)
+
+**Prerequisites:** Docker and Docker Compose
+```
+git clone https://github.com/ejohchisimdi-collab/Banking-api-v1.git
+cd Banking-api-v1
+ Edit docker compose with your email credentials
+docker-compose up -d
+Make sure its running on docker decstop
+```
+
+**Access the application:**
+- API: http://localhost:8081
+- Swagger: http://localhost:8081/swagger-ui.html
+
+### Traditional Setup
+
+**Prerequisites:** Java 17, Maven 3.8+, MySQL 8.0+
 ### 1. Clone the Repository
 - git clone https://github.com/ejohchisimdi-collab/Banking-api-v1.git
 - cd Banking-api-v1
@@ -215,4 +237,5 @@ POST /users/login
 ## Author
 
 Chisimdi Ejoh
+
 
