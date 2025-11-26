@@ -7,6 +7,7 @@ import jakarta.mail.internet.MimeMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.event.EventListener;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -28,6 +29,8 @@ public class MailService {
     private static final Logger log = LoggerFactory.getLogger(MailService.class);
     private JavaMailSender mailSender;
     private NotificationsRepository notificationsRepository;
+    @Value("${spring.mail.from}")
+    String from;
     public MailService(JavaMailSender mailSender,NotificationsRepository notificationsRepository){
         this.mailSender=mailSender;
         this.notificationsRepository=notificationsRepository;
@@ -38,7 +41,7 @@ public class MailService {
         simpleMailMessage.setTo(to);
         simpleMailMessage.setSubject(subject);
         simpleMailMessage.setText(body);
-        simpleMailMessage.setFrom("ejohchisimdi@gmail.com");
+        simpleMailMessage.setFrom(from);
         mailSender.send(simpleMailMessage);
     }
     @Async
@@ -47,7 +50,7 @@ public class MailService {
         MimeMessageHelper mimeMessageHelper=new MimeMessageHelper(mimeMailMessage,true);
         mimeMessageHelper.setTo(to);
         mimeMessageHelper.setSubject(subject);
-        mimeMessageHelper.setFrom("ejohchisimdi@gmail.com");
+        mimeMessageHelper.setFrom(from);
         mimeMessageHelper.addAttachment(attachment.getName(),attachment);
         mimeMessageHelper.setText(body);
         mailSender.send(mimeMailMessage);
