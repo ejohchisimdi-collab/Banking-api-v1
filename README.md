@@ -59,7 +59,7 @@ A comprehensive banking application built with Spring Boot, featuring 40 compreh
 - Branch assignments
 
 
-- Automated monthly account statements (PDF)
+- Automated monthly account statements (JSON)
 On-demand account reports by date range
 
 ## Administrative Features
