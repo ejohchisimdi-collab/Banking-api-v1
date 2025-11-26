@@ -218,7 +218,7 @@ POST /users/login
 - Loan application approval
 - Payment confirmations
 - Overdue payment alerts
-- Monthly account statements (with PDF attachment)
+- Monthly account statements (with Json attachment)
 
 # Testing
 - Run the test suite:
