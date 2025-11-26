@@ -132,7 +132,7 @@ Make sure its running on docker decstop
 
 ### Traditional Setup
 
-**Prerequisites:** Java 17, Maven 3.8+, MySQL 8.0+
+**Prerequisites:** Java 17, Maven 3.8+, MySQL 8.0+,intelli j paid or community version
 ### 1. Clone the Repository
 - git clone https://github.com/ejohchisimdi-collab/Banking-api-v1.git
 - cd Banking-api-v1
@@ -237,5 +237,6 @@ POST /users/login
 ## Author
 
 Chisimdi Ejoh
+
 
 
