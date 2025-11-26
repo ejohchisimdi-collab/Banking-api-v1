@@ -136,8 +136,7 @@ Make sure its running on docker decstop
 ### 1. Clone the Repository
 - git clone https://github.com/ejohchisimdi-collab/Banking-api-v1.git
 - cd Banking-api-v1
-### 2. Configure Environment Variables
-- Create a .env file in the project root:
+### 2. Configure Application.properties 
 - pring.datasource.url=jdbc:mysql:// localhost:3306/banking_db
 - spring.datasource.username=your_mysql_username
 - spring.datasource.password=your_mysql_password
@@ -151,10 +150,7 @@ Make sure its running on docker decstop
 ### 3. Create Database
 - sqlCREATE DATABASE banking_db;
 - Spring Boot will automatically create the tables on first run.
-### 4. Build and Run
-- click on the triple dots in the run configuration in intellij.
-- click on edit
-- In environment variables give the link for the .env file
+### 4. Build and Run
 
 # Run the application
 - mvn spring-boot:run
