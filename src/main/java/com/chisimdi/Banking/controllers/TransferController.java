@@ -40,7 +40,7 @@ public class TransferController {
 
     @Operation(summary = "Make a scheduled transfer",description = "schedule a transfer, acessible only to customers")
     @PostMapping("/scheduled-transfer")
-    @PreAuthorize("hasRole('ROlE_Customer') and principal.userId == #transferHelper.userId")
+    @PreAuthorize("hasRole('ROLE_Customer') and principal.userId == #transferHelper.userId")
     public TransfersDTO scheduledTransfer(@Valid@RequestBody ScheduledTransferHelper transferHelper){
         log.info("Post /scheduled-transfer");
         return transferService.createScheduledTransfer(transferHelper.getYear(),transferHelper.getMonth(),transferHelper.getDay(),transferHelper.getUserId(),transferHelper.getReceivingAccountId(),transferHelper.getSendingAccountId(),transferHelper.getAmount());
