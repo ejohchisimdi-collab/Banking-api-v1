@@ -121,7 +121,7 @@ On-demand account reports by date range
 ```
 git clone https://github.com/ejohchisimdi-collab/Banking-api-v1.git
 cd Banking-api-v1
- Edit docker compose with your email credentials
+ Edit docker compose with your email credentials(Note: For password use app password instead of regular password)
 docker-compose up -d
 Make sure its running on docker decstop
 ```
